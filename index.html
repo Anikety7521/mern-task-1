@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <title>Live Html Coding</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <style>
+            .typed-out{
+                overflow: hidden;
+                border-right: .15em solid orange;
+                white-space: nowrap;
+                animation: 
+                typing 10s forwards;
+                font-size: 1.6rem;
+                width: 0;
+            }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 28% }
+  }
+ 
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="typed-out">Welcome To Real Time Html Editor</div>
+        </div>
+
+        <hr>
+
+       
+        <div class="wrapper">
+            <div class="typing-demo">
+                <h1>Write Your Code Here ....</h1>
+            </div>
+        </div>
+        
+        
+        <hr>
+        
+       <form>
+        <div id="textarea">
+        <textarea id="input" onkeyup="live()" name="inputbox" rows="20" cols="206" ></textarea>
+        </div> 
+       
+       
+       <br>
+        <hr>
+        <div class="wrapper">
+            <div class="typing-demo">
+                <h1> Output ....</h1>
+            </div>
+        </div>
+        
+        <hr>
+        <div id="outputbox">
+            <div id="output"></div>
+
+        </div>
+       </form>
+
+    </body>
+</html>
