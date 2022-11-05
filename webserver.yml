@@ -7,7 +7,7 @@
 
    - name: copy the file in webserver
      copy:
-       src: /var/lib/jenkins/workspace/ansible
+       src: /var/lib/jenkins/workspace/ansible/
        dest: /var/www/html/
 
    - name: startig the web server
