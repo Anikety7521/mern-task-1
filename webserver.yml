@@ -1,0 +1,19 @@
+- hosts: lb
+  tasks:
+   - name: installing web server
+     package:
+       name: "httpd"
+       state: present
+
+   - name: copy the file in webserver
+     copy:
+       src: /var/lib/jenkins/workspace/githubcopy1
+       dest: /var/www/html/index.html
+
+   - name: startig the web server
+     service:
+             name: "httpd"
+             state: started
+             enabled: yes
+
+
