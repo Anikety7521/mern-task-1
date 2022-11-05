@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: lb
   tasks:
    - name: installing web server
      package:
